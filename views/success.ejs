@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('head'); -%>
+</head>
+
+<body>
+    <%- include('navbar'); -%>
+    <div class="container">
+        Your poll has been successfully created. Here is your poll id: <strong><%= newPostKey %>. </strong><a
+            href="vote/<%=newPostKey%>">View your
+            poll.</a>
+    </div>
+</body>
+
+</html>

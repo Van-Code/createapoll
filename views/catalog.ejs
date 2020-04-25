@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('head'); -%>
+</head>
+
+<body>
+    <%- include('navbar'); -%>
+
+    <div class="container">
+        <div class="row">
+            <% list.forEach(function(p,i){ %>
+
+            <div class="form-group col-6">
+                <%= p[1].question %>
+            </div>
+            <div class="form-group col-6">
+                <a href="vote/<%= p[0] %>">Vote Now</a>
+            </div>
+            <% }) %>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

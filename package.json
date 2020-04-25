@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "create a poll",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "firebase": "^7.14.1",
+    "http-status-codes": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/pollpoll"
+  }
+}

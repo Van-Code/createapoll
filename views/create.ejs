@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('head'); -%>
+</head>
+
+<body>
+
+    <%- include('navbar'); -%>
+    <div class="container">
+        <form method="POST" action="/create">
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="question">
+                        Question:</label> <input type="text" name="question" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="opt1">Option 1:</label><input type="text" id="opt1" name="opt1" class="form-control" />
+                    <label id="opt2">Option 2:</label> <input type="text" id="opt2" name="opt2" class="form-control" />
+                    <label id="opt3">Option 3:</label><input type="text" id="opt3" name="opt3" class="form-control" />
+                    <label id="opt4">Option 4:</label><input type="text" id="opt4" name="opt4" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <input type="submit" value="submit" class="btn btn-info btn-sm" />
+                </div>
+            </div>
+        </form>
+        <% if(error){ %>
+        <div class="alert alert-warning"><%= error  %></div>
+        <% } %>
+    </div>
+</body>
+
+</html>
