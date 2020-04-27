@@ -7,4 +7,5 @@ After creating a poll, a poll id is auto generated in which the user can come ba
 You will need to provide your own firebase config.
 
 npm i
+
 node main.js
